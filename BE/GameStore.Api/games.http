@@ -1,0 +1,32 @@
+
+GET http://localhost:5037/games
+
+###
+GET http://localhost:5037/games/3
+
+###
+POST http://localhost:5037/games
+Content-Type: application/json
+
+{
+    "name":"Minercreaft",
+    "genre":"Kids & Family",
+    "price":3.34,
+    "releaseDate":"2011-11-03"
+}
+
+
+###
+PUT http://localhost:5037/games/2
+Content-Type: application/json
+
+{
+    "name": "Final Fantacy X",
+    "gennr": "Role-playing",
+    "price": 100.33,
+    "releaseDate": "2000-03-03"
+}
+
+
+###
+DELETE http://localhost:5037/games/1
